@@ -1,0 +1,20 @@
+[project]
+title = "IMDB TV Shows Explorer"
+version = "1.0.0"
+port = 8501
+slug = "preswald-project"
+entrypoint = "hello.py"  # <-- Make sure this matches your script file name
+
+[branding]
+name = "IMDB TV Shows Explorer"
+logo = "images/IMDB.png"         # Optional - include logo in your project if needed
+favicon = "images/rating.ico"   # Optional - include favicon if needed
+primaryColor = "#FF5733"
+
+[data.imdb_top_5000_tv_shows_csv]
+type = "csv"
+path = "data/imdb_top_5000_tv_shows.csv"  # <-- Make sure this path matches your uploaded file
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
